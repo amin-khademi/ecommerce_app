@@ -1,4 +1,4 @@
-abstract class Strings{
+abstract class AppStrings{
 
   static const String replace = "replace";
   static const String enterYourNumber = "شماره خود را وارد کنید";

@@ -1,4 +1,8 @@
+import 'package:ecommerce_app/componets/theme.dart';
+import 'package:ecommerce_app/route/names.dart';
+import 'package:ecommerce_app/route/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,15 +14,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return KeyboardDismisser(
+      gestures: const [
+        GestureType.onTap,
+        GestureType.onPanUpdateDownDirection,
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: lightTheme(),
+        initialRoute: ScreensNames.root,
+        routes: routes,
       ),
-      home:Scaffold()
     );
   }
 }
-
