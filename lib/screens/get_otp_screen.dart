@@ -27,7 +27,7 @@ class GetOtpScreen extends StatelessWidget {
             Dimens.medium.height,
             Text(
               AppStrings.otpCodeSendFor.replaceAll(AppStrings.replace, "0912"),
-              style: LightTextStyleApp.titile,
+              style: LightTextStyleApp.title,
             ),
             Dimens.small.height,
             Text(

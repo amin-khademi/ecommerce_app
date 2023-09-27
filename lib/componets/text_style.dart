@@ -4,8 +4,13 @@ import 'package:flutter/material.dart';
 
 class LightTextStyleApp {
   LightTextStyleApp._();
-  static const TextStyle titile = TextStyle(
+  static const TextStyle title = TextStyle(
       fontFamily: FontFamily.dana, fontSize: 14, color: LightAppColor.title);
+  static const TextStyle productTitle = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontWeight: FontWeight.normal,
+      fontSize: 16,
+      color: LightAppColor.title);
   static const TextStyle hint = TextStyle(
       fontFamily: FontFamily.dana, fontSize: 14, color: LightAppColor.hint);
   static const TextStyle avatarText = TextStyle(
@@ -13,6 +18,20 @@ class LightTextStyleApp {
       fontSize: 11,
       color: Colors.black54,
       fontWeight: FontWeight.w400);
+
+  static const TextStyle prodTimerstyle = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 13,
+      color: LightAppColor.primary,
+      fontWeight: FontWeight.w400);
+
+  static const TextStyle oldPrice = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 12,
+      decoration: TextDecoration.lineThrough,
+      color: LightAppColor.oldColor,
+      fontWeight: FontWeight.w400);
+
   static const TextStyle mainButton = TextStyle(
       fontFamily: FontFamily.dana,
       fontSize: 15,
@@ -27,8 +46,13 @@ class LightTextStyleApp {
       fontFamily: FontFamily.dana,
       fontSize: 12,
       color: LightAppColor.btmNavActive);
-      static const TextStyle btmNavUnActive = TextStyle(
+  static const TextStyle btmNavUnActive = TextStyle(
       fontFamily: FontFamily.dana,
       fontSize: 12,
       color: LightAppColor.btmNavUnActive);
+  static const TextStyle amazing = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 22,
+      fontWeight: FontWeight.w700,
+      color: LightAppColor.amazingColor);
 }

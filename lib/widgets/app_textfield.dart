@@ -34,11 +34,11 @@ class AppTextField extends StatelessWidget {
               children: [
                 Text(
                   prefixLable,
-                  style: LightTextStyleApp.titile,
+                  style: LightTextStyleApp.title,
                 ),
                 Text(
                   lable,
-                  style: LightTextStyleApp.titile,
+                  style: LightTextStyleApp.title,
                 ),
               ],
             ),

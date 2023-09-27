@@ -11,7 +11,8 @@ final List<String> imgList = [
 
 class AppSlider extends StatefulWidget {
   const AppSlider({
-    super.key, required this.imgList,
+    super.key,
+    required this.imgList,
   });
 
   final List<String> imgList;
@@ -38,7 +39,7 @@ class _AppSliderState extends State<AppSlider> {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 300,
+      height: 250,
       child: Column(
         children: [
           CarouselSlider(
@@ -46,6 +47,7 @@ class _AppSliderState extends State<AppSlider> {
               items: items,
               options: CarouselOptions(
                 autoPlay: true,
+                initialPage: 0,
                 onPageChanged: (index, reason) {
                   setState(() {
                     _current = index;
