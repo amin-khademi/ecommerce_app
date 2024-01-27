@@ -1,5 +1,5 @@
 abstract class AppStrings{
-
+static const String sendToAddress = "ارسال به آدرس";
   static const String replace = "replace";
   static const String enterYourNumber = "شماره خود را وارد کنید";
   static const String hintPhoneNumber = "مثل :  09121114466";
@@ -46,5 +46,7 @@ abstract class AppStrings{
   static const String inProccess = "درحال پردازش";
   static const String cancelled = "لغو شده";
   static const String delivered = "تحویل شده";
+  static const String lurem =
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ";
  
 }

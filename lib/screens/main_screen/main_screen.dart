@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/gen/assets.gen.dart';
 import 'package:ecommerce_app/resource/color.dart';
-import 'package:ecommerce_app/screens/main_screen/basket_screen.dart';
+import 'package:ecommerce_app/screens/main_screen/cart_screen.dart';
 import 'package:ecommerce_app/screens/main_screen/home_screen.dart';
 import 'package:ecommerce_app/screens/main_screen/profileScreen.dart';
 import 'package:ecommerce_app/widgets/bottom_nav_item.dart';
@@ -73,7 +73,7 @@ class _MainScreenState extends State<MainScreen> {
                     Navigator(
                       key: _basketkey,
                       onGenerateRoute: (settings) => MaterialPageRoute(
-                        builder: (context) => const BasketScreen(),
+                        builder: (context) => const CartScreen(),
                       ),
                     ),
                     Navigator(
