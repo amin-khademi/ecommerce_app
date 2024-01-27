@@ -4,6 +4,18 @@ import 'package:flutter/material.dart';
 
 class LightTextStyleApp {
   LightTextStyleApp._();
+  static TextStyle caption = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 13,
+      color: LightAppColor.title.withAlpha(150),
+      fontWeight: FontWeight.normal);
+      static const TextStyle selectedTab = TextStyle(
+      fontFamily: FontFamily.dana, fontSize: 14, color: LightAppColor.title);
+
+  static TextStyle unSelectedTab = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 14,
+      color: LightAppColor.title.withAlpha(125));
   static const TextStyle title = TextStyle(
       fontFamily: FontFamily.dana, fontSize: 14, color: LightAppColor.title);
       static const TextStyle tagTitle = TextStyle(
