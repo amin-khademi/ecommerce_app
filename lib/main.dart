@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/componets/theme.dart';
 import 'package:ecommerce_app/route/names.dart';
 import 'package:ecommerce_app/route/routes.dart';
+import 'package:ecommerce_app/screens/product_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: lightTheme(),
         initialRoute: ScreensNames.root,
-        routes: routes,
+        // routes: routes,
+        home: ProductListScreen(),
       ),
     );
   }
