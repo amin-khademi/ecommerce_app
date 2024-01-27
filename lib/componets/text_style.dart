@@ -6,6 +6,8 @@ class LightTextStyleApp {
   LightTextStyleApp._();
   static const TextStyle title = TextStyle(
       fontFamily: FontFamily.dana, fontSize: 14, color: LightAppColor.title);
+      static const TextStyle tagTitle = TextStyle(
+      fontFamily: FontFamily.dana, fontSize: 14, color: Colors.white);
   static const TextStyle productTitle = TextStyle(
       fontFamily: FontFamily.dana,
       fontWeight: FontWeight.normal,
