@@ -24,7 +24,7 @@ class CatWidget extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.all(Dimens.small),
+            margin: const EdgeInsets.all(Dimens.small),
             width: size.height * .09,
             height: size.height * .09,
             decoration: BoxDecoration(

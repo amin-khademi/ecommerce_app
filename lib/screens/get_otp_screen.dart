@@ -4,7 +4,6 @@ import 'package:ecommerce_app/gen/assets.gen.dart';
 import 'package:ecommerce_app/resource/dimens.dart';
 import 'package:ecommerce_app/resource/strings.dart';
 import 'package:ecommerce_app/route/names.dart';
-import 'package:ecommerce_app/route/routes.dart';
 import 'package:ecommerce_app/widgets/app_textfield.dart';
 import 'package:ecommerce_app/widgets/main_button.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +29,7 @@ class GetOtpScreen extends StatelessWidget {
               style: LightTextStyleApp.title,
             ),
             Dimens.small.height,
-            Text(
+            const Text(
               AppStrings.wrongNumberEditNumber,
               style: LightTextStyleApp.primaryTextStyle,
             ),

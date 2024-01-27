@@ -8,7 +8,8 @@ class ProductSingleScreen extends StatelessWidget {
     return Container(
       color: Colors.green,
       width: double.infinity,
-      height: double.infinity,child: Text("product  Single"),
+      height: double.infinity,
+      child: const Text("product  Single"),
     );
   }
 }

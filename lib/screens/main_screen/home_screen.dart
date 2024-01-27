@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const BouncingScrollPhysics(),
+          // physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
               SearchBarr(
@@ -98,7 +98,7 @@ class HomeScreen extends StatelessWidget {
                         shrinkWrap: true,
                         reverse: true,
                         itemBuilder: (context, index) {
-                          return ProductItem(
+                          return const ProductItem(
                             productName: "...ساعت مردانه",
                             productPrice: 21000,
                             discount: 34,
@@ -107,9 +107,10 @@ class HomeScreen extends StatelessWidget {
                         },
                       ),
                     ),
-                    VerticalText(
+                    const VerticalText(
                       title: AppStrings.topSells,
-                    )
+                    ),
+                  
                   ],
                 ),
               ),

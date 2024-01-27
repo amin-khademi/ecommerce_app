@@ -14,14 +14,14 @@ class BtmNavScreenIndex {
 }
 
 class MainScreen extends StatefulWidget {
-  MainScreen({super.key});
+  const MainScreen({super.key});
 
   @override
   State<MainScreen> createState() => _MainScreenState();
 }
 
 class _MainScreenState extends State<MainScreen> {
-  List<int> _routeHistory = [0];
+  final List<int> _routeHistory = [0];
 
   int selectedIndex = BtmNavScreenIndex.home;
   final GlobalKey<NavigatorState> _homekey = GlobalKey();

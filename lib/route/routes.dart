@@ -11,7 +11,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   ScreensNames.root: (context) => SendOtpScreen(),
   ScreensNames.getOtpScreen: (context) => GetOtpScreen(),
   ScreensNames.registerScreen: (context) => Registerscreen(),
-  ScreensNames.mainScreen: (context) =>  MainScreen(),
-  ScreensNames.productListScreen: (context) =>  ProductListScreen(),
-  ScreensNames.productSingleScreen: (context) =>  ProductSingleScreen(),
+  ScreensNames.mainScreen: (context) => const MainScreen(),
+  ScreensNames.productListScreen: (context) => const ProductListScreen(),
+  ScreensNames.productSingleScreen: (context) => const ProductSingleScreen(),
 };

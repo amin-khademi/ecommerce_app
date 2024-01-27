@@ -10,7 +10,7 @@ class ProductListScreen extends StatelessWidget {
         color: Colors.green,
         width: double.infinity,
         height: double.infinity,
-        child: Center(child: Text("productlistScreen")),
+        child: const Center(child: Text("productlistScreen")),
       ),
     );
   }
