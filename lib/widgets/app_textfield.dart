@@ -64,5 +64,3 @@ class AppTextField extends StatelessWidget {
     );
   }
 }
-
-class MyStyles {}

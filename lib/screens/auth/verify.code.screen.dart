@@ -8,11 +8,12 @@ import 'package:ecommerce_app/widgets/app_textfield.dart';
 import 'package:ecommerce_app/widgets/main_button.dart';
 import 'package:flutter/material.dart';
 
-class GetOtpScreen extends StatelessWidget {
-  GetOtpScreen({super.key});
+class VerifyCodeScreen extends StatelessWidget {
+  VerifyCodeScreen({super.key});
   TextEditingController phoneNumberController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    final mobileRouteArg = ModalRoute.of(context)!.settings.arguments as String;
     var size = MediaQuery.of(context).size;
     return SafeArea(
         child: Scaffold(
