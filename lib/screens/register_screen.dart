@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 
 class Registerscreen extends StatelessWidget {
   Registerscreen({super.key});
-   TextEditingController _controllerName = TextEditingController();
+   final TextEditingController _controllerName = TextEditingController();
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

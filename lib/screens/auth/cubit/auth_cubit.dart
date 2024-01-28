@@ -1,7 +1,8 @@
-import 'package:bloc/bloc.dart';
+
 import 'package:dio/dio.dart';
 import 'package:ecommerce_app/data/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'auth_state.dart';
 
@@ -18,7 +19,9 @@ class AuthCubit extends Cubit<AuthState> {
           .post(Endpoints.sendSms, data: {"mobile": mobile}).then((value) {
         debugPrint(value.toString());
         if (value.statusCode == 201) {
-          emit(SentState());
+          emit(SentState(mobile: mobile));
+        } else if (value.statusCode == 403) {
+          emit(ErrorState());
         } else {
           emit(ErrorState());
         }
@@ -36,7 +39,10 @@ class AuthCubit extends Cubit<AuthState> {
           data: {"mobile": mobile, "code": code}).then((value) {
         debugPrint(value.toString());
         if (value.statusCode == 201) {
-          emit(VerifiesState());
+          if (value.data["data"]["is_registered"]) {
+            emit(VerifiedIsRegisteredState());
+          } else {}
+          emit(VerifiedNotRegisteredState());
         } else {
           emit(ErrorState());
         }

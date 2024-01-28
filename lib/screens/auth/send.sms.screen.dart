@@ -34,7 +34,7 @@ class SendSmsScreen extends StatelessWidget {
               listener: (context, state) {
                 if (state is SentState) {
                   Navigator.pushNamed(context, ScreensNames.getOtpScreen,
-                      arguments: phoneNumberController.text);
+                      arguments: state.mobile);
                 } else if (state is ErrorState) {
                   ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                       backgroundColor: Colors.red,

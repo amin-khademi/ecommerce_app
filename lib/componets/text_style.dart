@@ -69,4 +69,9 @@ class LightTextStyleApp {
       fontSize: 22,
       fontWeight: FontWeight.w700,
       color: LightAppColor.amazingColor);
+      static const TextStyle primaryThemeTextStyle = TextStyle(
+      fontFamily: FontFamily.dana,
+      fontSize: 15,
+      color: LightAppColor.primary,
+      fontWeight: FontWeight.w500);
 }
